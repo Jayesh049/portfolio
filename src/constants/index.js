@@ -1,4 +1,5 @@
 import {
+    eatfit,
     mobile,
     backend,
     creator,
@@ -24,6 +25,8 @@ import {
     jobit,
     tripguide,
     threejs,
+    rb,
+    gen
   } from "../assets";
   
   export const navLinks = [
@@ -199,9 +202,9 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Eat Fit",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Created a food ordering app that allows user to SignUp|SignIn, view|buy food plans, add|edit review, view their profile.",
       tags: [
         {
           name: "react",
@@ -212,54 +215,58 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "express",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: eatfit,
+      source_code_link: "https://github.com/Jayesh049/FoodApp_Frontend",
+      live_deployed_link: "https://foodappfrontend421.netlify.app/"
     },
     {
-      name: "Job IT",
+      name: "Resume Builder",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Resume Builder is a Web Application, that allows user to select a resume template, edit it with their details and download the final resume.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "redux",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "firebase",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: rb,
+      source_code_link: "https://github.com/Jayesh049/ResumeBuilder",
+      live_deployed_link: "https://resume-builder-4a981.web.app/"
     },
     {
-      name: "Trip Guide",
+      name: "Genrich Restaurant",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "We have created Genrich Restaurant clone app by using modern UI/UX design",
       tags: [
         {
-          name: "nextjs",
+          name: "reactjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "UI/UX",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "JavaScript",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: gen,
+      source_code_link: "https://github.com/Jayesh049/Gerich_restaurant",
+      live_deployed_link: "https://genrchrestaurant421.netlify.app/"
+
     },
   ];
   

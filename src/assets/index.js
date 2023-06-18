@@ -34,9 +34,16 @@ import tripguide from "./tripguide.png";
 import logo2 from "./svg/logo-color.svg";
 import logo3 from './svg/logo-black.svg';
 import logo4 from './svg/logo-no-background.svg';
-
+import eatfit from '../assets/eatfit.png';
+import rb from '../assets/rb.png'
+import ldv from '../assets/liveDlink.jpeg';
+import gen from '../assets/gen.png'
 
 export {
+  gen,
+  ldv,
+  rb,
+  eatfit,
   logo,
   kuviba,
   logo1,

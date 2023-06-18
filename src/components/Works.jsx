@@ -3,13 +3,13 @@ import Tilt from 'react-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
-import { github } from '../assets';
+import { github , ldv } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects  } from '../constants';
 import { fadeIn , textVariant } from '../utils/motion';
 
 
-const ProjectCard= ({ index , name , description, tags , image , source_code_link}) =>{
+const ProjectCard= ({ index , name , description, tags , image , source_code_link, live_deployed_link}) =>{
   return (
     <motion.div variants={fadeIn("up" , "spring",index * 0.5,0.75)}>
       {/* defined tilt properties and then inserted div inside tilt for bigger cards */}
@@ -42,6 +42,19 @@ const ProjectCard= ({ index , name , description, tags , image , source_code_lin
                       src={github}
                       alt="github"
                       className= "w-1/2 h-1/2 object-contain"
+                    />
+                  </div>
+                  <div 
+                  onClick={() => window.open
+                  (live_deployed_link,"_blank")}
+                  className="black-gradient w-10 h-10
+                  rounded-full flex justify-center items-center
+                  cursor-pointer">
+                    {/* adding github */}
+                    <img 
+                      src={ldv}
+                      alt="live"
+                      className= "w-1/7 h-1/7 object-contain rounded-full"
                     />
                   </div>
               </div>
