@@ -52,7 +52,7 @@ const Feedbacks = () => {
         <h2 className={styles.sectionHeadText}>
           Testimonials.
         </h2>
-        <div className={`${styles.paddingX} -mt-14 pb-14 pt-20 -ml-20 flex flex-wrap  gap-1.5`}>
+        <div className={`${styles.paddingX} -mt-14 pb-14 pt-20 -ml-20 flex flex-wrap  gap-7`}>
         {testimonials.map((testimonial, index) => (
               <FeedbackCard
                   key={testimonial.name}
